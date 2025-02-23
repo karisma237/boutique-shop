@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop - Votre Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">KARISMA Shop</div>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="panier-icon">
+                    <a href="#panier">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="panier-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <h1>Bienvenue sur KARISMA  <br>SHOP</h1>
+            <p>Découvrez notre sélection de produits exceptionnels</p>
+        </section>
+
+        <section id="produits" class="products">
+            <h2>Nos Produits</h2>
+            <div class="products-grid" id="products-container">
+                <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
+            </div>
+        </section>
+
+        <section id="panier" class="cart-modal">
+            <div class="cart-content">
+                <h2>Votre Panier</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <p>Total: <span id="cart-total">0.00</span>€</p>
+                </div>
+                <button id="checkout-btn" class="btn">Commander</button>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 E-Shop. Tous droits réservés.</p>
+        <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contactez-nous sur WhatsApp
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
